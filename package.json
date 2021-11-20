@@ -1,0 +1,23 @@
+{
+  "name": "adventofcode2021",
+  "version": "1.0.0",
+  "description": "Advent of Code 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schang1146/adventofcode2021.git"
+  },
+  "author": "schang1146",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schang1146/adventofcode2021/issues"
+  },
+  "homepage": "https://github.com/schang1146/adventofcode2021#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
