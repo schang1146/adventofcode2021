@@ -1,5 +1,7 @@
 const fs = require('fs');
-const path = require('path');
+// const path = require('path');
+const { performance } = require('perf_hooks');
+const { URL } = require('url');
 
 const startTime = performance.now();
 const solution = runSolution();
@@ -7,15 +9,14 @@ const endTime = performance.now();
 console.log(`Solution: ${solution}`);
 console.log(`Solution took ${endTime - startTime} ms.`);
 
-function parseInput(file: any) {
-  fs.readFile(file, 'utf8', (err, data) => {
-    console.log({ err, data });
-  });
+function getInput(file: string) {
+  return fs.readFileSync(file, 'utf8');
 }
 
+function parseInput(data: string) {}
+
 function runSolution() {
-  console.log('__dirname:', __dirname);
-  const file = new URL('input.txt', __dirname);
-  console.log(file);
-  const parsedInput = parseInput(file);
+  const file = `${__dirname}/input.txt`;
+  const rawInputData = getInput(file);
+  const parsedInputData = parseInput(rawInputData);
 }
