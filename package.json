@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/schang1146/adventofcode2021#readme",
   "devDependencies": {
+    "@types/node": "^16.11.9",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "filereader": "^0.10.3",
+    "xhr2": "^0.2.1"
   }
 }

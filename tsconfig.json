@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "CommonJS",
-    "sourceMap": true
+    "module": "es2020",
+    "sourceMap": true,
+    "types": ["node"]
   }
 }
