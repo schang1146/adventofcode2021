@@ -10,10 +10,13 @@ console.log(`Solution took ${endTime - startTime} ms.`);
 function getInput(file) {
     return fs.readFileSync(file, 'utf8');
 }
-function parseInput(data) { }
+function parseInput(data) {
+    return data.split('\r\n');
+}
 function runSolution() {
     const file = `${__dirname}/input.txt`;
     const rawInputData = getInput(file);
     const parsedInputData = parseInput(rawInputData);
+    console.log(parsedInputData);
 }
 //# sourceMappingURL=solution.js.map

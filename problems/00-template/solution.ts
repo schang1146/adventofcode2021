@@ -13,10 +13,13 @@ function getInput(file: string) {
   return fs.readFileSync(file, 'utf8');
 }
 
-function parseInput(data: string) {}
+function parseInput(data: string) {
+  return data.split('\r\n');
+}
 
 function runSolution() {
   const file = `${__dirname}/input.txt`;
   const rawInputData = getInput(file);
   const parsedInputData = parseInput(rawInputData);
+  console.log(parsedInputData);
 }
