@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { performance } = require('perf_hooks');
-const { URL } = require('url');
 
 const startTime = performance.now();
 const solution = runSolution();
@@ -22,3 +21,5 @@ function runSolution() {
   const parsedInputData = parseInput(rawInputData);
   console.log(parsedInputData);
 }
+
+export {};
